@@ -117,7 +117,7 @@ REDIS_URL=<your redis url>
 JWT_SECRET=<Your secret jwt key>
 ARCJET_KEY=<your arcjet api key>
 ```
-*Note:- If you are unable to get your postgreSQL db URL locally then use `postgres://your_db_username:your_db_password@localhost:5432/your_database_name` and change credentials on your need basis.*
+*Note:- If you are unable to get your postgreSQL db URL locally then use `postgresql://your_db_username:your_db_password@localhost:5432/your_database_name` and change credentials on your need basis.*
 
 ### **3. Installation & Execution**
 Open your terminal, navigate to the project folder, and run:
