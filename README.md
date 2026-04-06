@@ -85,7 +85,7 @@ All endpoints, required roles, and exactly what data the frontend needs to send 
 | **Data** | `POST` | `/api/data/finance/create`| `admin` | Body (JSON) | `amount`, `type`, `category`, `desc`, `date` | Adds a new financial entry (income or expense). |
 | **Data** | `POST` | `/api/data/finance/update`| `admin` | Body (JSON) | `id`, `amount`, `type`, `category`, `description`, `date` | Modifies the details of an existing financial record. |
 | **Data** | `DELETE`| `/api/data/finance/:id` | `admin` | URL Params | **Params:** `id` | Permanently deletes a specific financial record. |
-|
+
 
 <br>
 
