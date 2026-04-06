@@ -75,7 +75,7 @@ All endpoints, required roles, and exactly what data the frontend needs to send 
 | **Auth** | `POST` | `/api/auth/signUp` | *Public* | Body (JSON) | `fullName`, `email`, `password`, `orgName`, `role` | Registers a new user and creates a new organization for them. |
 | **Auth** | `POST` | `/api/auth/login` | *Public* | Body (JSON) | `email`, `password`, `orgId`, `role` | Authenticates the user and sets a secure JWT cookie. |
 | **Auth** | `POST` | `/api/auth/create` | `admin` | Body (JSON) | `fullName`, `email`, `password`, `role`, `orgId` | Adds a new user (analyst/viewer) into the admin's organization. |
-| **Auth** | `PATCH` | `/api/auth/:id/role` | `admin` | URL Params & Body | **Params:** `id`<br>**Body:** `email`, `orgId`, `role` | Updates a specific user's role. |
+| **Auth** | `PATCH` | `/api/auth/:id/role` | `admin` | URL Params & Body | **Params:** `id`, `orgId`<br>**Body:** `email`, `role` | Updates a specific user's role. |
 | **Auth** | `PATCH` | `/api/auth/:id/status`| `admin` | URL Params & Body | **Params:** `id`<br>**Body:** `email`, `orgId`, `role`, `isActive` (boolean) | Toggles a user's account status (active/inactive) to allow or block access. |
 | **Data** | `GET` | `/api/data/dashboard` | `admin`, `analyst`, `viewer` | Cookies | *(None - Uses JWT cookie)* | Gets basic details of the user and their records. |
 | **Data** | `GET` | `/api/data/summery` | `admin`, `analyst` | Cookies | *(None - Uses JWT cookie)* | Gets total income, expenses, net balance, and category-wise totals. |
