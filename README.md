@@ -1,4 +1,4 @@
-# Zorvyn Finance Dashboard Backend
+# Finance Dashboard Backend
 
 This is the complete backend architecture for the Zorvyn finance dashboard. It is built using Node.js and allows users with admin access to manage financial records (income and expenses) securely. It features a multi-tenant organization system and Role-Based Access Control to ensure that only authorized users (Admin, Analyst, Viewer) can view or modify specific data.
 
